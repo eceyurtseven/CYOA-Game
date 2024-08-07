@@ -9,7 +9,7 @@ let b1Button;
 let b2Button;
 let screen = 0;
 
-/* SETUP RUNS ONCE */
+/* SETUP RUNS ONCE. */
 function setup() {
   createCanvas(600, 400);
   textAlign(CENTER);
