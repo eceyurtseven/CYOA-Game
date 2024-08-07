@@ -18,8 +18,13 @@ function setup() {
 
   // Set up the home screen
   background("pink");
+  textFont();
+  text("The Enchanted Forest",
+    width / 2,
+    height / 2 - 150,),
+  textSize(17);
   text(
-    "Welcome to screen 0. This is the home screen.",
+    "You are Alaric, a young adventurer living in the quiet \nvillage of Eldoria. One day, you find an ancient map that \nleads to the heart of the Enchanted Forest, rumored to \nhold great treasures and untold dangers. Armed with your \ncourage and a sense of curiosity, you decide to embark \non this journey.",
     width / 2,
     height / 2 - 100
   );
@@ -39,6 +44,7 @@ function draw() {
   enterButton.h = 50;
   enterButton.collider = "k";
   enterButton.color = "plum";
+  textSize(20);
   enterButton.text = "Enter";
 
 
@@ -78,30 +84,32 @@ function draw() {
 
 function showScreen1(){
   background("paleturquoise");
-  text("Welcome to screen 1. Make your first choice.", width/2, height/2-100);
+  textSize(18);
+  text("You stand at the edge of the Enchanted Forest, \nthe map clutched in your hand. The trees tower above you, \ntheir leaves whispering secrets in the wind. You take a \ndeep breath and step into the forest, ready for whatever lies ahead.", width/2, height/2-100);
   enterButton.pos = {x: -100, y: -100};
 
   // Add A1 button
-  a1Button.pos = {x: width/2 - 50, y: height/2 + 100};
-  a1Button.w = 50;
+  a1Button.pos = {x: width/2 - 150, y: height/2 + 100};
+  a1Button.w = 200;
   a1Button.h = 50;
   a1Button.collider = "k";
   a1Button.color = "plum";
-  a1Button.text = "A1";
+  a1Button.text = "Follow the Map";
 
   // Add A2 button
-  a2Button.pos = {x: width/2 + 50, y: height/2 + 100};
-  a2Button.w = 50;
+  a2Button.pos = {x: width/2 + 150, y: height/2 + 100};
+  a2Button.w = 200;
   a2Button.h = 50;
   a2Button.collider = "k";
   a2Button.color = "plum";
-  a2Button.text = "A2";
+  textSize(20);
+  a2Button.text = "Forge Your Own Path";
 }
 
 function showScreen2(){
   background("palegreen");
    text(
-     "Welcome to screen 2. Make your second choice.",
+     "You decide to follow the map precisely. After \nhours of walking, you reach a clearing with an ancient \nstone altar. There, you see a glowing artifact.",
      width / 2,
      height / 2 - 100
    );
@@ -111,25 +119,25 @@ function showScreen2(){
    a2Button.pos = { x: -50, y: -50 };
 
    // Add b1 Button
-   b1Button.pos = { x: width / 2 - 50, y: height / 2 + 100 };
-   b1Button.w = 50;
-   b1Button.h = 50;
+   b1Button.pos = { x: width / 2 - 150, y: height / 2 + 100 };
+   b1Button.w = 150;
+   b1Button.h = 70;
    b1Button.collider = "k";
    b1Button.color = "plum";
-   b1Button.text = "B1";
+   b1Button.text = "Pick up the \nartifact";
 
    // Add b2 Button
-   b2Button.pos = { x: width / 2 + 50, y: height / 2 + 100 };
-   b2Button.w = 50;
-   b2Button.h = 50;
+   b2Button.pos = { x: width / 2 + 150, y: height / 2 + 100 };
+   b2Button.w = 150;
+   b2Button.h = 70;
    b2Button.collider = "k";
    b2Button.color = "plum";
-   b2Button.text = "B2";
+   b2Button.text = "Leave the artifact \nand set up camp";
 }
 function showScreen3(){
   background("lavender");
   text(
-     "You hit an end point at Screen 3.",
+     "You pick up the artifact and follow the path it \nreveals. You arrive at a magnificent castle and \nspend the rest of your days learning its \nsecrets, becoming a legendary sorcerer. \n\nTHE END!",
      width / 2,
      height / 2 - 100
    );
@@ -140,7 +148,7 @@ function showScreen3(){
 function showScreen4(){
   background("plum");
   text(
-     "You hit an end point at Screen 4.",
+     "You leave the artifact and set up camp. You \nhave a peaceful night under the stars, but your \nadventure ends here, as you never uncover \nthe forest's secrets. \n\nTHE END!",
      width / 2,
      height / 2 - 100
    );
@@ -151,7 +159,7 @@ function showScreen4(){
 function showScreen5(){
   background("lightgreen");
   text(
-     "You hit an end point at Screen 5.",
+     "You forge your own path through the \nforest, but without a clear direction, you \nbecome hopelessly lost. Days turn into weeks, \nand you are never seen again. \n\nTHE END!",
      width / 2,
      height / 2 - 100
    );

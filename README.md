@@ -1,5 +1,5 @@
 # Choose Your Own Adventure (CYOA) Game 
-Welcome to the CYOA Game Project! 
+Welcome to the CYOA Game Project!
 
 ## File Overview
 
