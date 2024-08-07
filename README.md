@@ -1,5 +1,6 @@
 # Choose Your Own Adventure (CYOA) Game 
-Welcome to the CYOA Game Project!
+Welcome to the CYOA Game Project! 
+Link to the game: https://cyoa-game-ece-y.replit.app/
 
 ## File Overview
 
